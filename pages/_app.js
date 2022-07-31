@@ -1,7 +1,15 @@
-import '../styles/globals.css'
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+//({내가 렌더링 하길 원하는 페이지, pageProps})
+import NavBar from "../components/NavBar"
+export default function App({Component,pageProps}){
+    return(
+        <>
+            <NavBar/>
+            <Component {...pageProps}/>
+            <style jsx global>{`
+            a{
+                color:white;
+            }
+        `}</style>
+        </>  
+    )
 }
-
-export default MyApp
