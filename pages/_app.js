@@ -1,15 +1,16 @@
 //({내가 렌더링 하길 원하는 페이지, pageProps})
-import NavBar from "../components/NavBar"
+import Layout from "../components/Layout"
+// import NavBar from "../components/NavBar"
+
 export default function App({Component,pageProps}){
     return(
-        <>
-            <NavBar/>
+        <Layout>
             <Component {...pageProps}/>
-            <style jsx global>{`
+            {/* <style jsx global>{`
             a{
                 color:white;
             }
-        `}</style>
-        </>  
+        `}</style> */}
+        </Layout>  
     )
 }
