@@ -9,7 +9,7 @@ export default function Datail({ params }) {
   //유저가 홈페이지에서 상세페이지로 넘어올때만 title이 보임
   return (
     <div>
-      <Seo title={id} />
+      <Seo title={title} />
       <h4>{title}</h4>
     </div>
   );
